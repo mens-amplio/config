@@ -24,6 +24,8 @@ sudo ./config.sh
 
 4) This currently assumes that you have cloned the pulse-test repo into the home directory as well. If this is false, edit startup.sh to change the path to the script you'd like to run on startup.
 
+5) Now the script should run automatically next time the Pi is power cycled (after a ~20sec delay).
+
 NOTE: Once the script has auto-launched on startup, you can kill it by running this:
 sudo pkill python
 (This will actually kill all running python scripts, but for our purposes that's OK at the moment. If you don't want to do that, you can also run ps -ax to get the process number of the script, then sudo kill [process number] )
