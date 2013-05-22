@@ -9,13 +9,13 @@ WARNING: THESE SCRIPTS ASSUME A CLEAN INSTALL OF OCCIDENTALIS V0.2 AND ARE NOT T
 
 Instructions:
 
-1) Create a new user account for yourself so that in case the pi account gets screwed up somehow, you can still get in (replacing <user> with your new username):
+1) Create a new user account for yourself so that in case the pi account gets screwed up somehow, you can still get in (replacing [user] with your new username):
 
-sudo useradd <user>
+sudo useradd [user]
 
-sudo passwd <user>
+sudo passwd [user]
 
-sudo adduser <user> sudo
+sudo adduser [user] sudo
 
 2) Clone this repo into the pi account's home directory (so it resides in /home/pi/config)
 
@@ -26,4 +26,4 @@ sudo ./config.sh
 
 NOTE: Once the script has auto-launched on startup, you can kill it by running this:
 sudo pkill python
-(This will actually kill all running python scripts, but for our purposes that's OK at the moment. If you don't want to do that, you can also run ps -ax to get the process number of the script, then sudo kill <process number> )
+(This will actually kill all running python scripts, but for our purposes that's OK at the moment. If you don't want to do that, you can also run ps -ax to get the process number of the script, then sudo kill [process number] )
